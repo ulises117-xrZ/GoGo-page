@@ -1,85 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://kit.fontawesome.com/77a10f14d2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bahiana&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header class="cabecera">
-        <div class="cabecera__menuham"><a href="#"><i class="fas fa-bars"></i></a></div>
-        <div>
-            <a href="index.html"><img src="img/Logo.png" alt=""></a>
+
+    <div id="sidebar" > 
+        <div class="toggle-btn ">
+            <span id="otro">&#9776;</span>
+            <span> <i class="fas fa-times" id="time"></i></span>
         </div>
+        <ul>
+            <!-- <li>
+                <img src="logo.jpg" alt="Logotipo">
+            </li> -->
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#">Nosotros</a></li>
+
+        </ul>
+        
+    </div>
+    <header class="cabecera">
+        <!-- <div class="cabecera__menuham"><a href="#"><i class="fas fa-bars"></i></a></div> -->
+        <div class="cabecera__imagen scale-up-hor-center">
+            <a href="index.html"><img class="imagen" src="img/Logo.png" alt=""></a>
+        </div>
+        <ul class="Listaparapc">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li class="shake-horizontal"><a href="#" class="especial">Inscribete ya!</a></li>
+        </ul>
     </header>
     <main class="Principal">
-        <section>
-            <h1>POR UN MUNDO SIN FRONTERAS</h1>
-            <img src="df" alt="ilustracion de persona sobre pila de libros sosteniendo un birrete de graduacion">
+        <section class="principal__encabezado">
+            <h1 id="up" class="encabezado__h1">POR UN MUNDO SIN FRONTERAS</h1>
+            <img class="ilustracion"src="svg/Principalsinfront.svg" alt="ilustracion de persona sobre pila de libros sosteniendo un birrete de graduacion">
         </section>
 
-        <section>
-            <h2> La forma mas facil de aprender frances</h2>
-            <img src="" alt="ilustracion de 2 personas una sentada y la otra de pie viendo hacia el futuro">
-            <p>Aprende frances facil, completamente en linea desde la comodidad de tu casa. aprender
-                frances te abre multiples ventanas de oportunidades de desarrollo personal y profesional.
-            </p>
+        <section class="secu">
+            <img  class="ilustracion"src="svg/laformamasfacil.svg" alt="ilustracion de 2 personas una sentada y la otra de pie viendo hacia el futuro">
+            <div class="secu__div">
+                <h2 class="secu__h2"> La forma más fácil de aprender Francés</h2>
+                <p class="secu__parrafo">Aprende francés fácil, completamente en línea
+                    desde la comodidad de tu casa. Aprender francés
+                    te abre múltiples oportunidades de desarrollo.</p>
+            </div>
         </section>
     </main>
 
     <article class="servicios">
-        <section>
-            <h2> SERVICIOS</h2>
-            <div>
+        <h2 id="servicios"> SERVICIOS</h2>
+        <section class="servicio1">
+            <div class="servicio__div">
+                <img  class="ilustracion"src="svg/cursosenlinea.svg" alt="ilustracion de persona frente a una computadora recibiendo clases">
                 <h3>Cursos completamente en línea</h3>
-                <img src="" alt="ilustracion de persona frente a una computadora recibiendo clases">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi natus numquam! Officia voluptate esse placeat quae laboriosam provident quos nobis nemo fuga. Ipsam explicabo soluta quas vel aut quia!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit debitis animi sunt, doloremque sequi assumenda, itaque iste odio officia mollitia repellat temporibus ratione aliquam expedita nihil quas possimus, autem architecto.
-                </p>
+                <p>Ofrecemos cursos de Francés, Italiano y Portugés según el Marco Común Europeo de referencia para las lenguas, A1,A2,B1,B2,C1. Contamos con profesionales altamente capacitados y con una amplia experiencia.</p>
             </div>
-            <div>
+            <div class="servicio__div">
+                <img class="ilustracion" src="svg/traduccion.svg" alt="ilustracion de persona con una burbuja de dialogo">
                 <h3>Traducción e interpretación</h3>
-                <img src="" alt="ilustracion de persona con una burbuja de dialogo">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi natus numquam! Officia voluptate esse placeat quae laboriosam provident quos nobis nemo fuga. Ipsam explicabo soluta quas vel aut quia!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit debitis animi sunt, doloremque sequi assumenda, itaque iste odio officia mollitia repellat temporibus ratione aliquam expedita nihil quas possimus, autem architecto.
-                </p>
+                <p>Contamos con servicios de Traducción e interpretación en el idioma Francés y Español.</p>
             </div>
-            <div>
+            <div class="servicio__div servicio__div--diferente">
+                <img class="ilustracion" src="svg/Tutorias.svg" alt="ilustracion de persona recibiendo tutoria de un video en youtube">
                 <h3>Tutorias</h3>
-                <img src="" alt="ilustracion de persona recibiendo tutoria de un video en youtube">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nisi natus numquam! Officia voluptate esse placeat quae laboriosam provident quos nobis nemo fuga. Ipsam explicabo soluta quas vel aut quia!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit debitis animi sunt, doloremque sequi assumenda, itaque iste odio officia mollitia repellat temporibus ratione aliquam expedita nihil quas possimus, autem architecto.
-                </p>
+                <p>Si necesitas un tutor que esté al pendiente de ti durante varias sesiones, o necesitas refuerzo en un tema en particular, nosotros podemos ayudarte, Nos adaptamos a tus necesidades.</p>
             </div>
         </section>
     </article>
 
-    <footer>
-        <!-- <h3>Contáctenos</h3> -->
-        <div>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-youtube"></i></a>
-            <a href="#"><i class="fab fa-tiktok"></i></a>
+    <footer class="footer">
+        <div class="footer__rrss">
+            <a href="https://www.facebook.com/GoGo.Academysv" target="_blank" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/gogo.academy/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCK4s8nLckozQSWAtTXsd7BQ" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@gogoacademy?lang=es" target="_blank"><i class="fab fa-tiktok"></i></a>
         </div>
-        <div>
+        <div class="footer__history">
             <a href="#"> Quienes somos?</a>
             <a href="#"> Nuestra historia</a>
         </div>
-        <div>
-            <a href="#"> Contacto</a>
-            <a href="#"> Email</a>
-            <a href="#">Llamanos</a>
+        <div class="footer__contacto">
+            <h3 id="contacto">Contacto</h3>
+            <a href="mailto:fomation.fle10@gmail.com"> Email</a>
+            <a href="https://m.me/GoGo.Academy.sv" target="_blank">Escribenos</a>
         </div>
 
-        <p>formation.fle10@gmail.com</p>
-        <div>
-            <a href="#"><i class="fas fa-chevron-circle-up"></i></a>
+        <p class="p">formation.fle10@gmail.com</p>
+        <div class="footer__button--up">
+            <a href="#up"><i class="fas fa-chevron-circle-up"></i></a>
         </div>
-        <p>© Go Go Academy 2021</p>
+        <p class="derechos">© Go Go Academy 2021</p>
     </footer>
+
+    <script src="JS/script.js"></script>
 </body>
 </html>
