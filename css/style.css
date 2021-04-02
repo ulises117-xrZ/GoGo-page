@@ -3,6 +3,8 @@
     --secundario : #3F3D56;
     --fuentePrincipal : 'kiwi Maru', serif;
 }
+
+
 .scale-up-left {
 	animation: scale-up-left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550) 0.4s alternate both;
 }
@@ -336,6 +338,12 @@
     align-items: center;
 
 }
+
+#contacto{
+    color: #fff;
+    font-size: 2em;
+}
+
 .footer .footer__contacto a{
     color: #fff;
     font-size: 2em;
@@ -380,10 +388,6 @@
         justify-content: flex-end;
     }
 
-    .Principal{
-        /* grid-template-columns: repeat(2,1fr); */
-
-    }
 
     .Principal .principal__encabezado {
         grid-template-columns: repeat(2, 1fr);
@@ -396,9 +400,7 @@
         grid-template-columns: repeat(2,1fr);
     }
 
-    .secu p{
 
-    }
     .servicios .servicio1{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -406,6 +408,21 @@
     .servicios .servicio1 .servicio__div--diferente{
         grid-column: 1/3;
         grid-row: 2;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer .footer__rrss{
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    .footer .derechos{
+        grid-column: 1/3;
+        grid-row: 3;
     }
 }
 
@@ -454,12 +471,80 @@
     }
     
 
+    .Principal{
+        margin-bottom: 10em;
+    }
+
+    .principal__encabezado{
+        height: 70vh;
+
+    }
+
+    .principal__encabezado h1, .principal__encabezado .ilustracion{
+        font-size: 3em;
+    }
+
+    .secu{
+        height: 90vh;
+        align-items: center;        
+    }
+
+    .secu .ilustracion{
+        font-size: 3em;
+    }
+
+    .secu .secu__div h2{
+        font-size: 3em;
+    }
+
+    .secu .secu__div p{
+        font-size: 2em;
+        width: 100%;
+        padding: 0 .4em;
+    }
+
+    .servicios{
+        height: 90vh;
+    }
+
     .servicios .servicio1{
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .servicios .servicio__div img{
+        font-size:  2em;
     }
 
     .servicios .servicio1 .servicio__div--diferente{
         grid-column: 3/4;
         grid-row: 1;
 }
+
+    .footer .footer__rrss{
+        width: 20vw;
+    }
+
+
+    .footer{
+        height: 40vh;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 5em;
+    }
+
+    .footer .footer__history{
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+
+    .footer .footer__rrss{
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+
+    .footer .derechos{
+        grid-column: 1/4;
+        grid-row: 2;
+    }
+
+
 }

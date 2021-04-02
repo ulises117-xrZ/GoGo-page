@@ -19,3 +19,5 @@ btnTooggle.addEventListener('click', function (){
         marcador = true;
     }
 })
+
+//inicializacion de la libreria de animaciones

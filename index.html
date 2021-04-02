@@ -9,9 +9,10 @@
     <script src="https://kit.fontawesome.com/77a10f14d2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bahiana&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bahiana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -24,7 +25,7 @@
             <!-- <li>
                 <img src="logo.jpg" alt="Logotipo">
             </li> -->
-            <li><a href="#">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#contacto">Contacto</a></li>
             <li><a href="#">Nosotros</a></li>
@@ -38,7 +39,7 @@
             <a href="index.html"><img class="imagen" src="img/Logo.png" alt=""></a>
         </div>
         <ul class="Listaparapc">
-            <li><a href="#">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#contacto">Contacto</a></li>
             <li class="shake-horizontal"><a href="#" class="especial">Inscribete ya!</a></li>
@@ -46,12 +47,12 @@
     </header>
     <main class="Principal">
         <section class="principal__encabezado">
-            <h1 id="up" class="encabezado__h1">POR UN MUNDO SIN FRONTERAS</h1>
+            <h1 id="up" class="encabezado__h1">POR UN MUNDO SIN FRONTERAS <span>Francés</span></h1>
             <img class="ilustracion"src="svg/Principalsinfront.svg" alt="ilustracion de persona sobre pila de libros sosteniendo un birrete de graduacion">
         </section>
 
         <section class="secu">
-            <img  class="ilustracion"src="svg/laformamasfacil.svg" alt="ilustracion de 2 personas una sentada y la otra de pie viendo hacia el futuro">
+            <img data-aos="flip-up" data-aos-delay="500" style="z-index: -1;" class="ilustracion"src="svg/laformamasfacil.svg" alt="ilustracion de 2 personas una sentada y la otra de pie viendo hacia el futuro">
             <div class="secu__div">
                 <h2 class="secu__h2"> La forma más fácil de aprender Francés</h2>
                 <p class="secu__parrafo">Aprende francés fácil, completamente en línea
@@ -97,15 +98,19 @@
             <h3 id="contacto">Contacto</h3>
             <a href="mailto:fomation.fle10@gmail.com"> Email</a>
             <a href="https://m.me/GoGo.Academy.sv" target="_blank">Escribenos</a>
+            <!-- <p class="p">formation.fle10@gmail.com</p> -->
         </div>
 
-        <p class="p">formation.fle10@gmail.com</p>
         <div class="footer__button--up">
             <a href="#up"><i class="fas fa-chevron-circle-up"></i></a>
         </div>
         <p class="derechos">© Go Go Academy 2021</p>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="JS/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+AOS.init();
+</script>
 </body>
 </html>
