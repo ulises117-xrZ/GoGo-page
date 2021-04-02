@@ -147,9 +147,14 @@
     left: -70%; /*tengo que mdificar este tambien a modo que queden iguales*/
     /* transition: all 500ms linear; */
     transition: all 500ms;
-    z-index: 1;
+    z-index: 19;
 }
 
+.idioma{
+    color: var(--principal);
+    font-weight: 400;
+    /* font-size: 1.5em; */
+}
 
 #sidebar.active {
     left: 0;/**para mostrar el menu**/
@@ -216,6 +221,7 @@
     box-shadow: 5px -1px 24px -3px rgba(112,112,112,1);
     /* margin-bottom: 3em; */
     /* border: 1px solid blue; */
+    z-index: 9;
 }
 
 
