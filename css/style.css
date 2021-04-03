@@ -351,7 +351,7 @@
 
 /* Logotipo */
 .cabecera .cabecera__imagen .imagen {
-    width: 20em;
+    width: 15em;
     margin-left: 5em;
     display: flex;
     /* justify-content: center; */
@@ -695,7 +695,7 @@
         width: 100%;
         bottom: 0px;
         grid-template-columns: repeat(3, 1fr);
-        padding: 5em;
+        padding: .6em;
         bottom: 0;
     }
 
