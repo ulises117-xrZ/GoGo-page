@@ -261,6 +261,12 @@
     text-decoration: none;
     list-style: none;
 }
+
+.idioma{
+    color: var(--principal);
+    font-weight: 400;
+    /* font-size: 1.5em; */
+}
 /* Menu hamburguesa */
 #sidebar {
     position: fixed;
@@ -271,12 +277,6 @@
     /* transition: all 500ms linear; */
     transition: all 500ms;
     z-index: 19;
-}
-
-.idioma{
-    color: var(--principal);
-    font-weight: 400;
-    /* font-size: 1.5em; */
 }
 
 #sidebar.active {
