@@ -348,7 +348,10 @@
     z-index: 9;
 }
 
-
+.otro{
+    width: 200px;
+    height: 200px;
+}
 
 /* Logotipo */
 .cabecera .cabecera__imagen .imagen {
