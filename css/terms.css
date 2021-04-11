@@ -1,0 +1,41 @@
+:root{
+    --principal : #ff9900;
+    --secundario : #3F3D56;
+}
+
+
+.cabecera{
+    position: relative;
+    margin-bottom: 3em;
+}
+
+.principalito{
+    margin-bottom: 10em;
+}
+
+.Terminosh1{
+    text-align: center;
+}
+
+.letrerote{
+    width: 65vw;
+    font-size: 1em;
+    text-align: justify;
+}
+
+h3{
+    color: var(--secundario);
+    text-align: center;
+    font-size: 2em;
+}
+
+h4{
+    color: var(--principal);
+    text-align: center;
+    margin-top: .4em;
+    font-size: 2em;
+}
+
+b{
+    color: var(--secundario);
+}
