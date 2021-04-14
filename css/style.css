@@ -349,10 +349,10 @@
 }
 
 
-
 /* Logotipo */
 .cabecera .cabecera__imagen .imagen {
     width: 13em;
+    height: auto;
     height: auto;
     margin-left: 5em;
     display: flex;
@@ -375,7 +375,6 @@
     color: var(--secundario);
     font-size: 1.2em;
     text-align: center;
-    font-family: var(--fuentePrincipal);
 
 }
 
@@ -396,7 +395,6 @@
 }
 
 .secu .secu__h2{
-    font-family: var(--fuentePrincipal);
     color: var(--principal);
     font-size: 2em;
     text-align: center;
@@ -411,7 +409,6 @@
 
 .servicios .servicio1 .servicio__div h3, h2{
     text-align: center;
-    font-family: var(--fuentePrincipal);
     font-size: 1.5em;
     margin: .5em 0;
 }
