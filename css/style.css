@@ -495,12 +495,7 @@ a{
 .section2 .section2__lectura .lectura__span{
     font-size: 10px;
     color: #434255;
-    position: absolute;
-    margin-left:auto;
-    margin-right:auto;
-    left:0;
-    top: 70em;
-    right:0;;
+
 }
 
 .div2{
