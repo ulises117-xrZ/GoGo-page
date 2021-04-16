@@ -9,5 +9,5 @@ grammar.addEventListener('click', error);
 listening.addEventListener('click', error);
 
 function error(){
-    alert("Esta sección estara lista pronto!")
+    alert("Esta sección estara lista proximamente!")
 }
