@@ -39,4 +39,3 @@ const typed = new Typed('.typed', {
     cursorChar: '|',//caracter para el cursor.
     contentType: 'html',//'html' o 'null' para textos sin formato
 });
-
