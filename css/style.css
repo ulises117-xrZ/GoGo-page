@@ -484,6 +484,11 @@ a{
     flex-direction: column;
 }
 
+.section2{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
 .section2 .section2__lectura{
     text-align: center;
     font-size: 3em;
@@ -492,10 +497,22 @@ a{
     cursor: pointer;
 }
 
-.section2 .section2__lectura .lectura__span{
-    font-size: 10px;
-    color: #434255;
+.section2 .section2__button{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 1.5em;
+    background: var(--principal);
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.main .section .section__container--buttons button:hover{
+    background: var(--secundario);
+}
 
+.section2 .section2__button:hover{
+    background: var(--secundario);
 }
 
 .div2{
