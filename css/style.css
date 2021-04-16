@@ -439,8 +439,8 @@
     font-size: 4em;
     text-align: center;
     font-family: sans-serif;
-    color: var(--secundario)
-    
+    color: var(--secundario);
+
 }
 /* Img */
 .main .section__container--img{
@@ -452,9 +452,55 @@
     width: clamp(20em, 80%, 100em);
 
 }
+/* botones */
+.main .section .section__container--buttons{
+    display: flex;
+    /* position: absolute; */
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 2em;    
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.main .section .section__container--buttons button{
+    width: 10em;
+    padding: 5px 0;
+    font-size: 2em;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+    margin: 10px 0;
+    background: var(--principal);
+    color: #fff;
+    cursor: pointer;
+}
+
+.section__container--buttons .boton_up, .section__container--buttons .boton_down{
+    display: flex;
+    flex-direction: column;
+}
 
 .section2 .section2__lectura{
-    text-align: right;
+    text-align: center;
+    font-size: 3em;
+    font-family: sans-serif;
+    color: var(--secundario);
+    cursor: pointer;
+}
+
+.section2 .section2__lectura .lectura__span{
+    font-size: 10px;
+    color: #434255;
+    position: absolute;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    top: 70em;
+    right:0;;
 }
 
 .div2{
@@ -621,7 +667,9 @@
         border-radius: 50px;
         margin-bottom: 1em;
     }
-    
+    .section2 .section2__lectura .lectura__span{
+        top: 73em;
+    }
     
     .footer {
         display: grid;
@@ -759,7 +807,7 @@
 
 .servicios .servicio1 .servicio__div .right p{
     font-size: 2em;
-    width: 80%;
+    width: 75%;
     text-align: justify;
     padding: 0 .4em;
     font-family: serif;
@@ -770,8 +818,37 @@
     }
 
 /* SEccion frances */
-.main{
+.main .section .section__container--img{
+    position: absolute;
+    margin-left:auto;
+    margin-right:auto;
+    left:0;
+    right:0;
+    top: 4em;
+    z-index: -1;
+}
+.main .section .section__container--buttons{
+    /* position: absolute; */
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 50vh;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5em;
+}
 
+.main .section .section__container--buttons .boton_up, 
+.main .section .section__container--buttons .boton_down{
+    width: 80%;
+    flex-direction:row;
+    justify-content: space-between;
+    left: 50px;
+
+}
+
+.section2 .section2__lectura .lectura__span{
+    top: 80em;
 }
 
 
@@ -779,10 +856,9 @@
         /* height: 40vh; */
         /* position: absolute; */
         width: 100%;
-        bottom: 0px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 10em;
-        justify-content: center0;
+        justify-content: center;
         padding: .6em;
         bottom: 0;
         grid-row: 2;
