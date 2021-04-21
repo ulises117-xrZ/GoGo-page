@@ -1,0 +1,147 @@
+:root{
+    --principal : #ff9900;
+    --secundario : #3F3D56;
+    --fuentePrincipal : 'kiwi Maru', serif;
+}
+
+*{
+
+
+    
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+.accordion {
+    width: 90%;
+    /* background: var(--secundario); */
+    margin: 2rem auto;
+    margin-bottom: 2em;
+    height: 100vh;
+
+
+}
+
+.accordion .accordion-item{
+    background: var(--secundario);
+    color:#fff;
+    margin: 1rem 0;
+    border-radius: .5em;
+    box-shadow: 0 2px 5px 0 rgba( 0,0,0,.25);
+    padding: 1em;
+}
+
+.accordion-item-header{
+    padding: .6em;
+    min-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-item-header::after{
+    content: "\25be";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-item-header.active::after{
+    /* content:'\2212'; */
+    transform: rotate(180deg);
+}
+
+.accordion-item-body{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+}
+
+.accordion-item-body-content{
+    padding:1rem;
+    line-height: 1.5rem; 
+    border-image: linear-gradient(to right, var(--principal), yellow) 1;
+    border-top: 1px solid;
+    height: auto;
+    overflow:auto;
+}
+
+.accordion-item-header.active + .accordion-item-body{
+    max-height: 1000px;
+
+}
+/* hijos de acordion padre */
+.accordion-item-body-content .accordion .accordion-ite{
+    background: var(--secundario);
+    color:#fff;
+    margin: 1rem 0;
+    border-radius: .5em;
+    box-shadow: 0 2px 5px 0 rgba( 0,0,0,.25);
+    padding: 1em;
+
+}
+
+.accordion-item-body-content .accordion-item-heade{
+    padding: .6em;
+    min-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion-item-body-content .accordion-item-heade::after{
+    content: "\25be";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    transition: transform .2s ease-in-out;
+}
+
+.accordion-item-body-content .accordion-item-heade.activate::after{
+    /* content:'\2212'; */
+    transform: rotate(180deg);
+}
+
+.accordion-item-body-content .accordion-item-bod{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+}
+
+.accordion-item-body-content .accordion-item-body-conten{
+    padding: 0.5rem;
+    line-height: 1.5rem; 
+    border-image: linear-gradient(to right, var(--principal), yellow) 1;
+    border-top: 1px solid;
+}
+
+.accordion-item-body-content .accordion-item-heade.activate + .accordion-item-bod{
+    max-height: 1000px;
+}
+
+.accordion-item-body-conten .elementinos{
+    width: 100%;
+    font-size: 1.4em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.copyright{
+    color: var(--principal);
+}
+
+
+.visible{
+    display:none;
+}
