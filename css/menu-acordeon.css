@@ -27,6 +27,11 @@
 
 }
 
+#lectura {
+    margin-top: 15rem;
+}
+
+
 .accordion .accordion-item{
     background: var(--secundario);
     color:#fff;
@@ -145,3 +150,35 @@
 .visible{
     display:none;
 }
+
+
+.alert{
+    position:fixed;
+    width: 100%;
+    top:0;
+    height: 100vh;
+    -webkit-box-shadow: -1px 2px 35px -8px rgba(0,0,0,0.67);
+-moz-box-shadow: -1px 2px 35px -8px rgba(0,0,0,0.67);
+background: rgba(20, 20, 20, .5);
+box-shadow: -1px 2px 35px -8px rgba(0,0,0,0.67);
+z-index: 99;
+}
+
+.alert .alert--p{
+    width: clamp(20em, 50%, 70%);
+    height: 20em;
+    background: #fff;
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+margin: auto;
+    z-index: 999;
+    border-radius: 5px;
+}
+
+.alert .alert--equiz{
+    content: "\25be";
+}
+
