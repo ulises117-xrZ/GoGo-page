@@ -1,6 +1,6 @@
 :root{
     --principal : #ff9900;
-    --secundario : #3F3D56;
+    --secundarios : #3F3D56;
     --fuentePrincipal : 'kiwi Maru', serif;
 }
 
@@ -268,7 +268,7 @@
     position: fixed;
     width: 70%; /* si modifico este*/
     height: 100%;
-    background: var(--secundario);
+    background: var(--secundarios);
     left: -70%; /*tengo que mdificar este tambien a modo que queden iguales*/
     /* transition: all 500ms linear; */
     transition: all 500ms;
@@ -370,7 +370,7 @@
 
 .encabezado__h1{
     margin-top: 40px;
-    color: var(--secundario);
+    color: var(--secundarios);
     font-size: 1.2em;
     text-align: center;
 
@@ -439,7 +439,7 @@
     font-size: 4em;
     text-align: center;
     font-family: sans-serif;
-    color: var(--secundario);
+    color: var(--secundarios);
 
 }
 /* Img */
@@ -484,12 +484,17 @@ a{
     flex-direction: column;
 }
 
-.section2{
+.main .section .section__container--buttons button:hover{
+    background: var(--secundarios);
+}
+
+
+/* .section2{
     display: flex;
     flex-direction: column;
     margin-bottom: 1.5em;
-}
-.section2 .section2__lectura{
+} */
+/* .section2 .section2__lectura{
     text-align: center;
     font-size: 3em;
     font-family: sans-serif;
@@ -507,13 +512,8 @@ a{
     margin: 0 auto;
     cursor: pointer;
 }
-.main .section .section__container--buttons button:hover{
-    background: var(--secundario);
-}
 
-.section2 .section2__button:hover{
-    background: var(--secundario);
-}
+
 
 .div2{
     width: 100%;
@@ -521,13 +521,13 @@ a{
     justify-content: center;
 }
 
-/* Imagen del tunco */
+/* Imagen del tunco 
 .div2   .elTunco{
     width: 90%;
     text-align: center;
     border-radius: 30px;
     margin-bottom: 2em;
-}
+} */
 
 
 
@@ -539,7 +539,7 @@ a{
     display: flex;
     padding:0 0;
     flex-direction: column;
-    background: var(--secundario);
+    background: var(--secundarios);
     /* position: relative; */
 
 }
@@ -728,11 +728,11 @@ a{
 
     .cabecera .Listaparapc li a{
         font-family: var(--fuentePrincipal);
-        color: var(--secundario);
+        color: var(--secundarios);
     }
 
     .cabecera .Listaparapc li a:hover{
-        border-bottom: 1px solid var(--secundario);
+        border-bottom: 1px solid var(--secundarios);
     }
 
     .cabecera .Listaparapc .especial{
