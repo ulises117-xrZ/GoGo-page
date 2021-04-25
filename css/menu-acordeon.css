@@ -32,7 +32,7 @@
 }
 
 #lectura {
-    margin-top: 15rem;
+    margin-top: 5rem;
 }
 
 
@@ -188,3 +188,24 @@ margin: auto;
     content: "\25be";
 }
 
+.demo{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10em;
+    align-items: center;
+}
+
+.demo .demo__class{
+    padding:20px;
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2em;
+    color:var(--secundarios);
+
+}
+
+@media (max-width:600px) {
+    iframe{
+        width: 300px;
+    }
+}
