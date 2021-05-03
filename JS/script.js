@@ -19,7 +19,6 @@ btnTooggle.addEventListener('click', function (){
         marcador = true;
     }
 })
-
 //inicializacion de la libreria de animaciones (esta es para texto)
 const typed = new Typed('.typed', {
     strings: [
