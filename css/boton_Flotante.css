@@ -1,0 +1,38 @@
+.body{
+    position: relative;
+}
+
+/* .whapWrapper{
+    position: relative;
+    overflow: hidden;
+    bottom: 50px;
+    left: 50px;
+} */
+
+.whapWrapper {
+    bottom: 50px;
+    right: 25px;
+    z-index: 100;
+    position: fixed;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #00bb2b;
+    box-shadow: 0px 0px 4px #00bb2b;}
+
+    .whapWrapper:hover {
+        background-color: #0da530;
+    }
+
+.whapWrapper button{
+    border: none;
+    background-color: #00bb2c00;
+    width: 60px;
+    height: 60px;
+
+}
+.botonFlotante a{
+    /* padding: 20px; */
+    font-size: 3em;
+}
